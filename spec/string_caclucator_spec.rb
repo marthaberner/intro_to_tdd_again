@@ -7,4 +7,9 @@ describe StringCalc do
 
     expect(0).to eq (the_string.add(" "))
   end
+  it "Returns the sum of the numbers in the string" do
+    the_string = StringCalc.new
+
+    expect(21).to eq (the_string.add("11, 10"))
+  end
 end
