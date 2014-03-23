@@ -4,6 +4,14 @@ class FizzBuzz
   end
 
   def arrayify
-    [1, 2, 3, 4]
+    my_array = 1.upto(@input).to_a
+    i = 0
+    while i < my_array.length
+      if my_array[i] % 3 == 0
+       my_array[i] = "Fizz"
+      end
+     i += 1
+    end
+    my_array
   end
 end
