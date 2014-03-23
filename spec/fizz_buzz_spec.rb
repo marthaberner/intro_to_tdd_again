@@ -8,8 +8,13 @@ describe FizzBuzz do
     expect([1, 2,]).to eq number.arrayify
   end
   it "Replaces mutiples of 3 with Fizz" do
-    number = FizzBuzz.new(4)
+    number = FizzBuzz.new(3)
 
-    expect([1, 2, "Fizz", 4]).to eq number.arrayify
+    expect([1, 2, "Fizz",]).to eq number.arrayify
+  end
+  it "Replaces mutiples of 5 with Buzz" do
+    number = FizzBuzz.new(5)
+
+    expect([1, 2, "Fizz", 4, "Buzz"]).to eq number.arrayify
   end
 end
